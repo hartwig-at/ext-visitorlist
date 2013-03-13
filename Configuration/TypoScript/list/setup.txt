@@ -1,0 +1,7 @@
+plugin.tx_uservisitorlist_list {
+	settings {
+	  example {
+	    // Place your own TS here
+	  }
+	}
+}

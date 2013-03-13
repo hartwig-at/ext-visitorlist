@@ -1,0 +1,16 @@
+plugin.tx_uservisitorlist {
+	view {
+		templateRootPath = {$plugin.tx_uservisitorlist.view.templateRootPath}
+		partialRootPath  = {$plugin.tx_uservisitorlist.view.partialRootPath}
+		layoutRootPath   = {$plugin.tx_uservisitorlist.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_uservisitorlist.persistence.storagePid}
+	}
+	settings {
+	  iconPath = {$plugin.tx_uservisitorlist.settings.iconPath}
+	  example {
+	    // Place your own TS here
+	  }
+	}
+}
