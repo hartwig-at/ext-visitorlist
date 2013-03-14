@@ -1,18 +1,18 @@
-plugin.tx_uservisitorlist {
+plugin.tx_visitorlist {
 	view {
-		# cat=plugin.tx_uservisitorlist/file; type=string; label=Path to template root (FE)
-		templateRootPath = EXT:user_visitorlist/Resources/Private/Templates/
-		# cat=plugin.tx_uservisitorlist/file; type=string; label=Path to template partials (FE)
-		partialRootPath = EXT:user_visitorlist/Resources/Private/Partials/
-		# cat=plugin.tx_uservisitorlist/file; type=string; label=Path to template layouts (FE)
-		layoutRootPath = EXT:user_visitorlist/Resources/Private/Layouts/
+		# cat=plugin.tx_visitorlist/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:visitorlist/Resources/Private/Templates/
+		# cat=plugin.tx_visitorlist/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:visitorlist/Resources/Private/Partials/
+		# cat=plugin.tx_visitorlist/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:visitorlist/Resources/Private/Layouts/
 	}
 	persistence {
-		# cat=plugin.tx_uservisitorlist//a; type=int+; label=Default storage PID
+		# cat=plugin.tx_visitorlist//a; type=int+; label=Default storage PID
 		storagePid = 
 	}
 	settings {
-	 # cat=plugin.tx_uservisitorlist/file; type=string; label=Path to file type icons
-    iconPath = EXT:user_visitorlist/Resources/Public/Icons/TypeIcons/
+	 # cat=plugin.tx_visitorlist/file; type=string; label=Path to file type icons
+    iconPath = EXT:visitorlist/Resources/Public/Icons/TypeIcons/
   }
 }

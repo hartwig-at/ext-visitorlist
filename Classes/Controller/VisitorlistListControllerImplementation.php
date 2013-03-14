@@ -1,11 +1,11 @@
 <?php
 require_once('ListController.php');
 
-class UserVisitorlistListControllerImplementation extends Tx_UserVisitorlist_Controller_ListController {
+class VisitorlistListControllerImplementation extends Tx_Visitorlist_Controller_ListController {
 
   /**
    * controller
-   * @var Tx_UserVisitorlist_Controller_ListController
+   * @var Tx_Visitorlist_Controller_ListController
    */
   private $controller = NULL;
 

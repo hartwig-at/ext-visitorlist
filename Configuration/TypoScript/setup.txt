@@ -1,14 +1,14 @@
-plugin.tx_uservisitorlist {
+plugin.tx_visitorlist {
 	view {
-		templateRootPath = {$plugin.tx_uservisitorlist.view.templateRootPath}
-		partialRootPath  = {$plugin.tx_uservisitorlist.view.partialRootPath}
-		layoutRootPath   = {$plugin.tx_uservisitorlist.view.layoutRootPath}
+		templateRootPath = {$plugin.tx_visitorlist.view.templateRootPath}
+		partialRootPath  = {$plugin.tx_visitorlist.view.partialRootPath}
+		layoutRootPath   = {$plugin.tx_visitorlist.view.layoutRootPath}
 	}
 	persistence {
-		storagePid = {$plugin.tx_uservisitorlist.persistence.storagePid}
+		storagePid = {$plugin.tx_visitorlist.persistence.storagePid}
 	}
 	settings {
-	  iconPath = {$plugin.tx_uservisitorlist.settings.iconPath}
+	  iconPath = {$plugin.tx_visitorlist.settings.iconPath}
 	  example {
 	    // Place your own TS here
 	  }

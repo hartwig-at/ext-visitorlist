@@ -1,2 +1,2 @@
-plugin.tx_uservisitorlist_list {
+plugin.tx_visitorlist_list {
 }

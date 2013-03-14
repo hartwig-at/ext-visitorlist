@@ -1,9 +1,9 @@
 <?php
-class Tx_UserVisitorlist_Domain_Repository_FrontendUserRepository extends Tx_Extbase_Domain_Repository_FrontendUserRepository {
+class Tx_Visitorlist_Domain_Repository_FrontendUserRepository extends Tx_Extbase_Domain_Repository_FrontendUserRepository {
 private $implementation;
 private function getImplementation() {
   if( null == $this->implementation ) {
-    $this->implementation = new UserVisitorlistFrontendUserRepositoryImplementation($this);
+    $this->implementation = new VisitorlistFrontendUserRepositoryImplementation($this);
   }
   return $this->implementation;
 }
