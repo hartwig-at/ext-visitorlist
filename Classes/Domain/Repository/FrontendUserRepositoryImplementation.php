@@ -1,6 +1,6 @@
 <?php
 require_once("FrontendUserRepository.php");
-class UserVisitorlistFrontendUserRepositoryImplementation extends Tx_UserVisitorlist_Domain_Repository_FrontendUserRepository {
+class VisitorlistFrontendUserRepositoryImplementation extends Tx_Visitorlist_Domain_Repository_FrontendUserRepository {
 
   private $repository = NULL;
 

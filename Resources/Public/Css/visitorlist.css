@@ -1,0 +1,74 @@
+.tx-visitorlist {
+  position : relative;
+}
+
+/* Format list */
+.tx-visitorlist ul.f3-widget-paginator {
+  display         : inline-block;
+  float           : right;
+  list-style-type : none !important;
+  padding         : 5px !important;
+}
+
+.tx-visitorlist ul.f3-widget-paginator li {
+  display : inline-block;
+  padding : 3px;
+}
+
+.tx-visitorlist img {
+  margin-right   : 5px;
+  vertical-align : bottom;
+}
+
+.tx-visitorlist .export-label a {
+  border         : 1px solid #008A4E;
+  border-radius  : 3px;
+  font-size      : 14px;
+  line-height    : 16px;
+  margin-bottom  : 5px;
+  padding        : 5px 10px;
+  vertical-align : middle;
+}
+
+.tx-visitorlist .export-label a:hover {
+  background-color : #008A4E;
+  color            : #fff;
+  text-decoration  : none !important;
+}
+
+.tx-visitorlist .tx-visitorlist-list {
+  background-color : #ffffff !important;
+  border           : none !important;
+  border-top       : 1px solid #008A4E !important;
+  margin-top       : 10px;
+  padding          : 0 !important;
+}
+
+.tx-visitorlist .tx-visitorlist-list li {
+  list-style-type : none;
+}
+
+.tx-visitorlist .tx-visitorlist-list > li {
+  border-bottom : 1px solid #eeeeee;
+}
+
+/* Format visitor entry */
+.tx-visitorlist-visitor-title {
+  display    : inline-block;
+  font-size  : 120%;
+  margin-top : 6px;
+}
+
+.tx-visitorlist-visitor-name {
+  font-weight : bold;
+}
+
+.tx-visitorlist-visitor-company {
+  font-style : italic;
+  position   : absolute;
+  right      : 10px;
+}
+
+.tx-visitorlist-visitor-properties {
+  background-color : #ffffff !important;
+}

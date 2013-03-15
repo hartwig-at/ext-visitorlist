@@ -1,1 +1,21 @@
-<f:layout name="Default" /><f:section name="main">  <f:flashMessages class="flashMessages" />  <f:if condition="{debug}">    <f:debug>{debug}</f:debug>  </f:if>  <h3>You need to create your own Fluid templates and point TYPO3 to them via TypoScript.</h3>  <p>This is the default template for the action 'Display a list'(list) of plugin 'Visitor List'(list).</p></f:section>
+<f:layout name="Default" />
+<f:section name="main">
+  <f:flashMessages class="flashMessages" />
+
+  <f:if condition="{debug}">
+    <f:debug>{debug}</f:debug>
+  </f:if>
+
+  <span class="export-label"><f:link.action action="excel"><f:image src="EXT:visitorlist/Resources/Public/Icons/document-excel-csv.png" alt="Excel CSV"/>CSV Export</f:link.action></span>
+
+  <f:widget.paginate objects="{users}" as="paginatedUsers" configuration="{itemsPerPage:10, insertBelow:1, maximumNumberOfLinks:10}">
+  <ul class="tx-visitorlist-list">
+    <f:for each="{paginatedUsers}" as="user">
+      <li>
+        <f:render partial="Visitor" arguments="{user: user}"/>
+      </li>
+    </f:for>
+  </ul>
+  </f:widget.paginate>
+  <p style="clear:right;" />
+</f:section>

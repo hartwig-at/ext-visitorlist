@@ -1,0 +1,13 @@
+{namespace visitorlist=Tx_Visitorlist_ViewHelpers}
+<span class="tx-visitorlist-visitor-title">
+  <span class="tx-visitorlist-visitor-name">{user.firstName} {user.lastName}</span>
+  <span class="tx-visitorlist-visitor-company">{user.company}</span>
+</span>
+<ul class="tx-visitorlist-visitor-properties">
+  <f:if condition="{user.telephone}"><li>Telefon: {user.telephone}</li></f:if>
+  <f:if condition="{user.address}"><li>Adresse: {user.address}</li></f:if>
+  <f:if condition="{user.city}"><li>Ort: {user.city}<f:if condition="{user.country}">, {user.country}</f:if></li></f:if>
+  <f:if condition="{user.email}"><li><f:link.email email="{user.email}">{user.email}</f:link.email></li></f:if>
+  <f:if condition="{user.www}"><li><f:link.external uri="{user.www}" target="_blank">{user.www}</f:link.external></li></f:if>
+  <li>Zuletzt online: <f:format.date format='Y-m-d H:i:s'>{user.isonline}</f:format.date></li>
+</ul>
