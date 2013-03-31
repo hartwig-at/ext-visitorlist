@@ -1,6 +1,30 @@
 <?php
+/**
+ * Copyright (C) 2012, Oliver Salzburg
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *
+ * Created: 2013-03-13 15:00
+ *
+ * @author     Oliver Salzburg <oliver.salzburg@hartwig-at.de>, HARTWIG Communication & Events
+ * @copyright  Copyright (C) 2013, Oliver Salzburg
+ * @license    http://opensource.org/licenses/GPL-2.0 GPLv2
+ * @package    TYPO3
+ * @subpackage tx_visitorlist
+ */
 require_once('ListController.php');
-
 class VisitorlistListControllerImplementation extends Tx_Visitorlist_Controller_ListController {
 
   /**
@@ -52,31 +76,5 @@ class VisitorlistListControllerImplementation extends Tx_Visitorlist_Controller_
     echo $result;
 
     exit;
-  }
-
-  /**
-   * renders the given Template file via fluid rendering engine.
-   *
-   * @param string $templateFile        absolute path to the template File
-   * @param array $vars an array of all variables you want to assgin to the view f.e: array('blog'=> $blog, 'posts' => $posts)
-   *
-   * @return string of the rendered View.
-   */
-  protected function renderFileTemplate($templateFile, array $vars) {
-    $templateParser = Tx_Fluid_Compatibility_TemplateParserBuilder::build();
-    $objectManager = t3lib_div::makeInstance('Tx_Fluid_Compatibility_ObjectManager');
-
-    $templateContent = file_get_contents($templateFile);
-    if ($templateContent !== false) {
-      $content = $templateParser->parse($templateContent);
-      $variableContainer = $objectManager->create('Tx_Fluid_Core_ViewHelper_TemplateVariableContainer', $vars);
-      $renderingContext = $objectManager->create('Tx_Fluid_Core_Rendering_RenderingContext');
-      $renderingContext->setTemplateVariableContainer($variableContainer);
-      $viewHelperVariableContainer = $objectManager->create('Tx_Fluid_Core_ViewHelper_ViewHelperVariableContainer');
-      $renderingContext->setViewHelperVariableContainer($viewHelperVariableContainer);
-
-      $data = $content->render($renderingContext);
-      return $data;
-    }
   }
 }
