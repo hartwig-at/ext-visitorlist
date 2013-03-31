@@ -1,12 +1,10 @@
 <f:layout name="Default" />
 <f:section name="main">
-  <f:flashMessages class="flashMessages" />
-
   <f:if condition="{debug}">
     <f:debug>{debug}</f:debug>
   </f:if>
 
-  <span class="export-label"><f:link.action action="excel"><f:image src="EXT:visitorlist/Resources/Public/Icons/document-excel-csv.png" alt="Excel CSV"/>CSV Export</f:link.action></span>
+  <span class="export-label"><f:link.action action="excel"><f:image src="EXT:visitorlist/Resources/Public/Icons/document-excel-csv.png" alt="Excel CSV"/><f:translate key="LLL:EXT:visitorlist/Resources/Private/Language/locallang.xml:csv-export" /></f:link.action></span>
 
   <f:widget.paginate objects="{users}" as="paginatedUsers" configuration="{itemsPerPage:10, insertBelow:1, maximumNumberOfLinks:10}">
   <ul class="tx-visitorlist-list">

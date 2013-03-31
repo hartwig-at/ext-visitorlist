@@ -6,12 +6,14 @@
   </meta>
   <data type="array">
     <languageKey index="default" type="array">
+      <label index="csv-export">CSV Export</label>
       <label index="telephone">Phone: %s</label>
       <label index="address">Address: %s</label>
       <label index="city">City: %s</label>
       <label index="last-online">Last seen: </label>
     </languageKey>
     <languageKey index="de" type="array">
+      <label index="csv-export">CSV Export</label>
       <label index="telephone">Telefon: %s</label>
       <label index="address">Addresse: %s</label>
       <label index="city">Ort: %s</label>
