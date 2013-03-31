@@ -11,8 +11,4 @@ plugin.tx_visitorlist {
 		# cat=plugin.tx_visitorlist//a; type=int+; label=Default storage PID
 		storagePid = 
 	}
-	settings {
-	 # cat=plugin.tx_visitorlist/file; type=string; label=Path to file type icons
-    iconPath = EXT:visitorlist/Resources/Public/Icons/TypeIcons/
-  }
 }

@@ -7,10 +7,4 @@ plugin.tx_visitorlist {
 	persistence {
 		storagePid = {$plugin.tx_visitorlist.persistence.storagePid}
 	}
-	settings {
-	  iconPath = {$plugin.tx_visitorlist.settings.iconPath}
-	  example {
-	    // Place your own TS here
-	  }
-	}
 }
